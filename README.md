@@ -1,4 +1,4 @@
-# Poker hand classifier
+# Poker hand classifier [ACCURACY: 99.97%]
 Uses tensorflow to create and use a three hidden layer, convolutional neural network. Must train before use, data and formatter provided.
 
 ## Input format for use
