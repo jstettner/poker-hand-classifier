@@ -1,2 +1,8 @@
 __pycache__
 .DS_Store
+
+model.ckpt.data-00000-of-00001
+model.ckpt.index
+model.ckpt.meta
+
+create_feature_sets.pyc
