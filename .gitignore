@@ -6,3 +6,4 @@ model.ckpt.index
 model.ckpt.meta
 
 create_feature_sets.pyc
+checkpoint
