@@ -19,7 +19,7 @@ test_file = 'poker_hands_data/poker-hand-testing.data'
 
 def process_data(file):
     hm_lines = 1000000
-    
+
     featureset = []
 
     c = 0
@@ -29,7 +29,7 @@ def process_data(file):
             c += 1
             if(c%100000 == 0):
                 print("Step:",c)
-            
+
             split = l.split(",")
             split[-1] = split[-1].strip()
 
@@ -43,10 +43,10 @@ def process_data(file):
                 features[n-1] = 1
 
             classification[int(split[-1])] = 1
-            
+
             features = list(features)
             featureset.append([features,classification])
-            
+
     return featureset
 
 def process_features(l):
@@ -54,7 +54,7 @@ def process_features(l):
     split[-1] = split[-1].strip()
 
     features = np.zeros(52)
-    
+
     i = 0
     while (i < 10):
         n = (int(split[i])-1)*13 + int(split[i+1])
@@ -80,7 +80,3 @@ def create_feature_sets_and_labels(train,test,test_size = 0.1):
     test_y = list(features[:,1][-testing_size:])
 
     return train_x,train_y,test_x,test_y
-
-
-if __name__ == '__main__':
-    train_x,train_y,test_x,test_y = create_feature_sets_and_labels(train_file, test_file)
