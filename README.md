@@ -24,4 +24,5 @@ five cards in one input string: (suit1,rank1,suit2,rank2,suit3,rank3,suit4,rank4
       
 ## Credits
 @author Jack Stettner
+
 Data from https://archive.ics.uci.edu/ml/datasets/Poker+Hand
