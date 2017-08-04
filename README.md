@@ -1,13 +1,13 @@
-# Poker hand classifier [ACCURACY: 99.97%]
+# Poker hand classifier [ACCURACY: 99.95%]
 Uses tensorflow to create and use a three hidden layer, convolutional neural network. Must train before use, data and formatter provided.
 
 ## Input format for use
 five cards in one input string: (suit1,rank1,suit2,rank2,suit3,rank3,suit4,rank4,suit5,rank5)
 
 ### Suits
-1-4, not programmed to recognize specific suit value (ex. no suit heirarchy)
+1-4, not programmed to recognize specific suit value (ex. no suit hierarchy)
 
-### Rank)
+### Rank
 0-13 (A-K)
 
 ## Output format
@@ -21,7 +21,7 @@ five cards in one input string: (suit1,rank1,suit2,rank2,suit3,rank3,suit4,rank4
       7: Four of a kind
       8: Straight flush
       9: Royal flush
-      
+
 ## Credits
 @author Jack Stettner
 

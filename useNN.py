@@ -59,3 +59,7 @@ def use_neural_network(input_data):
 
 # TODO:
 # Implement graph reset to enable multiple runs of use_neural_network in the same session
+
+input = raw_input('Enter a hand: ')
+
+print(use_neural_network(input))
